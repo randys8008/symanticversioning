@@ -1,0 +1,13 @@
+mode: Mainline
+commit-message-incrementing: MergeMessageOnly
+
+assembly-versioning-format: '{Major}.{Minor}.{Patch}'
+commit-date-format: yyyyMMddTHHmmss
+
+branches:
+  pull-request:
+    tag: rc
+    increment: Minor
+    source-branches: ['release','feature']
+    increment: Patch
+    source-branches: ['bugfix','fix']
