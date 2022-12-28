@@ -13,10 +13,10 @@ pool:
 stages:
   - stage: Build
     displayName: Build Stage
+    environment: 'digital-dev'
     jobs:
       - job: ACEBuild
         displayName: ACE Build and Publish artifacts
-        environment: 'digital-dev'
         steps:
         - task: gitversion/setup@0
           displayName: Setup GitVersion
