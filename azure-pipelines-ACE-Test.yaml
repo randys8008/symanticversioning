@@ -7,7 +7,7 @@ trigger:
 - master
 
 pool:
-  name: Desktop
+  name: Default
   vmImage: LTIN168105
 
 stages:
