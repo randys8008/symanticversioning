@@ -7,8 +7,8 @@ trigger:
 - master
 
 pool:
-  name: ACE
-  vmImage: DESKTOP-0GBF6M5
+  name: Desktop
+  vmImage: LTIN168105
 
 stages:
   - stage: Build
@@ -28,4 +28,4 @@ stages:
             targetPath: '$(System.DefaultWorkingDirectory)/Test'
             useConfigFile: true
             configFilePath: './GitVersion.yml'
-          condition: contains(variables['build.SourceBranch'],'main')
+          condition: contains(variables['build.SourceBranch'],'master')
