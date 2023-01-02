@@ -16,7 +16,7 @@ stages:
     jobs:
       - job: ACEBuild
         displayName: ACE Build and Publish artifacts
-        Steps:
+        steps:
         - task: gitversion/setup@0
           displayName: Setup GitVersion
           inputs:
